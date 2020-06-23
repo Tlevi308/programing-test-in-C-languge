@@ -21,7 +21,7 @@ Trivadog* AddHostel(Trivadog* td, const Hostel* ht) {
 		for (int i = 0; i < td->num_of_hostels; i++)
 		{
 			//if yes
-			if (strcmp(0 == td->hostels[i]->hostel_name, ht->hostel_name))
+			if (strcmp(td->hostels[i]->hostel_name, ht->hostel_name)==0)
 			{
 				td->hostels[i] = DuplicateHostel(ht);
 				return td;
